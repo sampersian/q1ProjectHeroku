@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>shopHockey</title>
+    <link rel="icon" type="image/png" href="images/puck.png" sizes="16x16">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+      <!--change for different css file name -->
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">eShop</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a class='goHome'>Home<span class="sr-only">(current)</span></a></li>
+            <li><a class='cartLink'>Cart (<span class='cartCounter'>0</span>)</a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <select class="form-control" id="select">
+                <option>Everything</option>
+                <option>Brand</option>
+                <option>Kind</option>
+                <option>SKU</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control myInput" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-primary searchButton">Submit</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <h1 class="display-3">Welcome to the online store!</h1>
+      <p class="lead">Here you can view products and make an order!</p>
+      <hr class="m-y-2">
+      <div class='entranceOptions'>
+        <div class='entranceOption'>
+          <h4 class='entranceOptionTitle'>Start shopping now:</h4>
+          <input type='button' id='enterStore' class='btn-success' value="Enter Store"></input>
+        </div>
+
+        <div class='entranceOption'>
+          <h4 class='entranceOptionTitle'>Or, Search for something:</h4>
+          <input type="text" class="myInput2" placeholder="Search">
+          <button type="submit" class="btn-primary searchButton2">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class='myMain'>
+      <header class='myHeader'>
+        <h3 class="col-lg-3 col-md-3 col-sm-4 col-xs-6 pageTitleLeft">Select a Category</h3>
+        <h1 class="col-lg-9 col-md-9 col-sm-8 col-xs-6 pageTitle">Welcome to the Online Store!</h1>
+      </header>
+      <div class="container mainStage">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4">
+            <ul class="nav nav-pills nav-stacked catSelector">
+            </ul>
+          </div>
+
+          <div class="col-lg-9 col-md-9 col-sm-8 col-xs-8 container threeFour">
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class='myMain2'>
+      <div class='inventoryFilterBox'>
+        <div class='control-label inventoryFilterBoxLeft'>
+          <span>Select a Category</span>
+        </div>
+        <div class='inventoryFilterBoxRight'>
+          <select class="form-control inventoryFilterSelector" id="select">
+            <option value="Featured">Featured</option>
+          </select>
+        </div>
+      </div>
+      <div class='mainGallery'>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="app2.js"></script> <!--change for different JS file name -->
+  </body>
+</html>

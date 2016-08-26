@@ -1,0 +1,15 @@
+Idea 1: Price Comparison Tool
+Walmart API:
+	username: sampersian
+	password: galvanized31
+
+
+
+
+
+
+Idea 2: Custom Order Food (Pizza or sushi or all??)
+
+Zomato API Key : 42b1957401f53010309c6bd8a1cb4b02
+
+...that's all for
