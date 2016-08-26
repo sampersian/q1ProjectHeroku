@@ -1,7 +1,7 @@
 "use strict";
 var products = {};
 var cart = {};
-$.get("https://jsonhost-d6ae1.firebaseapp.com/hockeystore.json")
+$.get("hockeystore.json")
   .then((data) => {
     products = data;
     setUpInventory();
