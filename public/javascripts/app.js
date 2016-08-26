@@ -55,16 +55,16 @@ $.get("https://jsonhost-d6ae1.firebaseapp.com/hockeystore.json")
     // })
   })
 
-skus = [];
-categories = []; //category names
-categoryImages = {};
-brands = []; //brand names
-kinds = [];//different product kinds (maybe rename this because its confusing as fuck)
-inventoryBySKU = {}; //product inventory where keys are product SKU's
-inventoryByCategory = {}; //keys are category names with values of arrays containing different product objects
-inventoryByBrand = {};
-inventoryByKind = {};
-featuredItems = {};
+var skus = [];
+var categories = []; //category names
+var categoryImages = {};
+var brands = []; //brand names
+var kinds = [];//different product kinds (maybe rename this because its confusing as fuck)
+var inventoryBySKU = {}; //product inventory where keys are product SKU's
+var inventoryByCategory = {}; //keys are category names with values of arrays containing different product objects
+var inventoryByBrand = {};
+var inventoryByKind = {};
+var featuredItems = {};
 
 function getRidOfSpaces(str) {
   let arr = []
