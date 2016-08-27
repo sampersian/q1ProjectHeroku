@@ -174,7 +174,7 @@ function addNavCategories() {
 
 function showCategory(cat) {
   let theWholeCategory = inventoryByCategory[cat];
-  for (let c of theWholeCategory) {
+  for (let  c of theWholeCategory) {
     let obj = makeItemObject(c.SKU);
     $(".threeFour").append(obj);
   }
@@ -322,7 +322,7 @@ function confirmAdd(sku) {
     $("#nToAddof"+sku).val(1);
     return false;
   }
-  let tempConfirm = $('<div class="addConfirmBox">\
+  var tempConfirm = $('<div class="addConfirmBox">\
     <div class="modal-dialog modal-sm myModal" role="document">\
       <div class="">\
         Add '+numberToAdd+' to your cart?\
@@ -405,7 +405,7 @@ function oneLess(sku) {
   } else {
     cart[sku] -= 1;
   }
-  console.log(cart[s]);
+  console.log(cart[sku]);
   updateCartCount();
   showCart();
 }
